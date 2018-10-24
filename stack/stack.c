@@ -13,7 +13,7 @@ int push(int val, stack s) {
 	if ( new_item == NULL )
 		return 1;
 	new_item->next = s->at_top;
-	s->at_top = new_item;
+    s->at_top = new_item;
 	return 0;
 }
 
@@ -56,5 +56,4 @@ int peek(stack s, int* status = NULL) {
 		*status = 0;
 	
 	return s->at_top->item;
-	
 }
